@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "WH";
+    src: url(fonts/IMFeENsc28P.ttf);
+}
+
+
+body { 
+    background: url(images/Back.jpg);
+    color: white;
+    font-family: "WH", sans-serif;
+}
+
+figure {
+    background: url(images/paint.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    margin-left: 150px;
+    font-size: 48px;
+    background-color: black;
+    width: 210px;
+}
+
+h2 {
+    margin-left: 190px;
+    font-size: 48px;
+    background-color: black;
+    width: 310px;
+}
+
+h3 {
+    margin-left: 150px;
+    font-size: 48px;
+    background-color: black;
+    width: 390px;
+}
+
+h4 {
+    margin-left: 150px;
+    font-size: 48px;
+    background-color: black;
+    width: 310px;
+}
+
+
+ul {
+    margin-left: 90px;
+    font-size: 26px;
+    background-color: black;
+    width: 450px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.margin-about {
+    margin-left: 100px;
+    background-color: black;
+    background-blend-mode: 200px;
+    width: 1700px;
+}
+
+p {
+    font-size: 26px;
+}
+
+.gif {
+    margin-top: 100px;
+    margin-left: 70px;
+    
+}
