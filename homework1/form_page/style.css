@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "WH";
+    src: url(fonts/WH.ttf);
+}
+
+body {
+    background: url(images/back.png);
+    background-size: cover;
+    font-family: "WH";
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+}
