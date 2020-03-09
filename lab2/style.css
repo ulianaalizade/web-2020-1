@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "WH";
+    src: url(fonts/WH.ttf);
+}
+
 body {
+    background: url(images/back.png);
+    background-size: cover;
+    font-family: "WH";
     text-align: center;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+div {
+    margin-top: 1%;
+}
+
+footer {
+    margin-top: 5%;
 }
