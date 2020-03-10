@@ -3,9 +3,16 @@
     src: url(fonts/WH.ttf);
 }
 
-body {
+html {
     background: url(images/back.png);
     background-size: cover;
+}
+
+body {
+    background-image: url(images/frame2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 64%;
     font-family: "WH";
     text-align: center;
     font-size: 150%;
