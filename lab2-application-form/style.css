@@ -6,32 +6,26 @@
 html {
     background: url(images/back.png);
     background-size: cover;
-   
-    background-repeat: no-repeat;
 }
 
 body {
     background-image: url(images/frame2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 700px;
+    background-size: 600px;
     font-family: "WH";
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: bolder;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     visibility: hidden;
 }
 
 div {
     margin-top: 1%;
-}
-
-footer {
-    margin-top: 5%;
 }
 
 .form-group {
