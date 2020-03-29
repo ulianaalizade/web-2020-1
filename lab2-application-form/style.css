@@ -6,13 +6,15 @@
 html {
     background: url(images/back.png);
     background-size: cover;
+   
+    background-repeat: no-repeat;
 }
 
 body {
     background-image: url(images/frame2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 64%;
+    background-size: 700px;
     font-family: "WH";
     text-align: center;
     font-size: 150%;
@@ -20,7 +22,8 @@ body {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 50px;
+    visibility: hidden;
 }
 
 div {
@@ -29,4 +32,8 @@ div {
 
 footer {
     margin-top: 5%;
+}
+
+.form-group {
+    font-size: 25px;
 }
