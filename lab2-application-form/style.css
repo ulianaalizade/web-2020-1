@@ -9,25 +9,40 @@ html {
 }
 
 body {
-    background-image: url(images/frame2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 600px;
     font-family: "WH";
     text-align: center;
-    font-size: 130%;
-    font-weight: bolder;
+    font-size: 60px;
+    color: black;
+	text-align: center;
+	text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+	-webkit-text-stroke: 1px red;
 }
 
-h1 {
-    font-size: 40px;
-    visibility: hidden;
+p {
+    font-size: 100px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-div {
-    margin-top: 1%;
+.style {
+    padding: 20px;
+    display: block;
 }
 
-.form-group {
-    font-size: 25px;
+.dec {
+    border-radius: 5px;
+}
+
+.size {
+    transform: scale(2.0);
+}
+
+.size1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+} 
+
+.all {
+    background-color: black;
 }
