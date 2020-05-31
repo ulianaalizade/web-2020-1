@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <link href = "style.css" rel = "stylesheet">
+    <title>Application Form</title>
+    <link rel="shortcut icon" href="images/Machina.png" type="image/png">
+</head>                 
+
+<html>
+    <body>
+        <p>Application form</p>
+            <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                <div class="style">
+                    <label for = "name">Full Name:</label>
+                    <input id = "name" type = "text" name = "name" placeholder = "Velizariy Coul" class = "dec">
+                </div>
+                <div class="style">
+                    <label>
+                    Choose gender:
+                    <input type = "radio" name = "sex" value = "male" class = "size"> Male
+                    <input type = "radio" name = "sex" value = "female" class = "size"> Female
+                    </label>
+                </div>
+                <div class="style">          
+                    <label for = "SSP">System, Sector, Planet:</label>
+                    <input id = "SSP" type = "text" name = "SSP" placeholder = "Solar System, Solar, Terra" class = "dec">
+                </div>
+                <div class="style">
+                    <label for = "category">Appeal category:</label>
+                    <select name="category" id="category" class = "dec">
+                    <option value="introduction">Introduction</option>
+                    <option value="gratitude" selected>Gratitude</option>
+                    <option value="claim">Claim</option>
+                    </select>
+                </div>
+                <div class="style">             
+                    <label for = "explain">Explain:</label>
+                    <textarea name = "explain" id = "explain" cols = "50" rows = "5" placeholder="Completed only in case of sending a introduction or claim" class = "dec"></textarea>
+                </div>
+                <div class="style">
+                    <label for = "attachments">ID scan</label>
+                    <input type = "file" name = "attachments" class = "dec">
+                </div>
+                <div class="style">
+                    <input type = "submit" value = "Submit!" class = "dec, size1">
+                </div>
+            </form>                     
+    </body>
+</html>

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "WH";
+    src: url(fonts/WH.ttf);
+}
+
+html {
+    background: url(images/back.png);
+    background-size: cover;
+}
+
+body {
+    font-family: "WH";
+    text-align: center;
+    font-size: 60px;
+    color: black;
+	text-align: center;
+	text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+	-webkit-text-stroke: 1px red;
+}
+
+p {
+    font-size: 100px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.style {
+    padding: 20px;
+    display: block;
+}
+
+.dec {
+    border-radius: 5px;
+}
+
+.size {
+    transform: scale(2.0);
+}
+
+.size1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+} 
+
+.all {
+    background-color: black;
+}

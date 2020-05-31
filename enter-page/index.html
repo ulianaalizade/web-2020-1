@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <link href = "style.css" rel = "stylesheet">
+    <title>Enter page</title>
+    <link rel="shortcut icon" href="images/Machina.png" type="image/png">
+</head>                 
+
+<html>
+    <body>
+        <p>Enter page</p>
+            <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                <div class = "style">
+                    <label for = "login">Login:</label>
+                    <input id = "login" type = "text" name = "login" autocomplete="on" class = "dec">
+                </div>
+                <div class = "style">
+                    <label for = "password">Password:</label>
+                    <input id = "password" type = "password" name = "password" autocomplete="off" class = "dec"> 
+                </div>
+                <div class = "style">
+                    <input id = "checkbox" type="checkbox" name = "checkbox" checked = "checked">
+                        Remeber me
+                    </input>
+                </div>
+                <div class = "style">
+                    <button class = "dec">
+                        <img src = "images/machina.svg" style="vertical-align: middle" width = "30px">
+                    </button>
+                </div>
+            </form>
+    </body>
+</html>

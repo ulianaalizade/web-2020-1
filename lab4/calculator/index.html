@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <link href = "style.css" rel = "stylesheet">
+    <script src="main.js" defer></script>
+    <title>Calculactor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item input"><form name="form"><input type="text" name="field" readonly></form></div>
+        <div class="item clean" onclick="clean()">clear</div>
+        <div class="item delete" onclick="back1()">delete</div>
+        <div class="item" onclick="enter('(')">(</div>
+        <div class="item" onclick="enter(')')">)</div>
+        <div class="item divide" onclick="enter('/')">/</div>
+        <div class="item" onclick="enter('7')">7</div>
+        <div class="item" onclick="enter('8')">8</div>
+        <div class="item" onclick="enter('9')">9</div>
+        <div class="item" onclick="enter('*')">*</div>
+        <div class="item" onclick="enter('4')">4</div>
+        <div class="item" onclick="enter('5')">5</div>
+        <div class="item" onclick="enter('6')">6</div>
+        <div class="item" onclick="enter('-')">-</div>
+        <div class="item" onclick="enter('1')">1</div>
+        <div class="item" onclick="enter('2')">2</div>
+        <div class="item" onclick="enter('3')">3</div>
+        <div class="item plus" onclick="enter('+')">+</div>
+        <div class="item" onclick="enter('0')">0</div>
+        <div class="item" onclick="enter('.')">.</div>
+        <div class="item" onclick="equal()">=</div>
+    </div>
+</body>
