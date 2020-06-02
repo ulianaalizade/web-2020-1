@@ -112,7 +112,7 @@ function downloadData(page=1) {
     let search = document.querySelector('.search-field').value;
     url.searchParams.append('page', page);
     url.searchParams.append('per-page', perPage);
-    url.searchParams.append('q'. search);
+    url.searchParams.append('q', search);
     //
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -131,7 +131,7 @@ window.onload = function () {
     document.querySelector('.per-page-btn').onchange = perPageBtnHandler;
     // новое 
     document.querySelector('.search-btn').onclick = searchBtnHandler; 
-    document.querySelector('search-field').addEventListener('keydown', function(e) {
+    document.querySelector('.search-field').addEventListener('keydown', function(e) {
         if (e.keyCode === 13) { 
             downloadData(1); 
         }
