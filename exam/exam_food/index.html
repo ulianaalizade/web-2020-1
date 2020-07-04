@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="images/tab-icon.png" type="image/png">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg navbar-light"> <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Доставка</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active ">
-              <a class="nav-link " href="#">Служба доставки еды<span class="sr-only"></span></a>
+              <a class="nav-link " href="#deli">Служба доставки еды<span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Выбор предприятия<span class="sr-only"></span></a>
@@ -29,13 +29,13 @@
               <a class="nav-link" href="#">Меню<span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Дополнительные опции<span class="sr-only"></span></a>
+              <a class="nav-link" href="#options">Дополнительные опции<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
       </nav>
     
-      <div id="carouselExampleIndicators" class="carousel slide col-md-6 mx-auto" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide col-md-6 mx-auto m-3" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -62,9 +62,11 @@
         </a>
       </div>
 
-      <h2 class="align-center">Служба доставки еды</h2>
+      <h2 class="align-center p-4" id="deli">Служба доставки еды</h2>
 
-      <div class="container align-center">
+      <hr width="70%">
+
+      <div class="container align-center p-5">
         <div class="row">
           <div class="col-md-4 col-md-offset-3">
             <img src="images/food-delivery.png" width="100" alt="food-delivery">
@@ -93,9 +95,18 @@
         </div>
       </div>
 
+      <hr width="70%">
 
-      <h2 class="container">Дополнительные опции</h2>
-      <div class="align-center">
+      <h2 class="align-center p-4" id="choose">Выбор предприятия общественного питания</h2>
+
+      <hr width="70%">
+
+      <h2 class="align-center p-4" id="choose">Меню</h2>
+
+      <hr width="70%" class="p-3">
+
+      <h2 class="container" id="options">Дополнительные опции</h2>
+      <div class="align-center p-4">
         <div class="row">
           <div class="col-md-6">
             <p class="text-md-right">Являюсь студентом ВУЗа</p>
@@ -105,7 +116,7 @@
             <label class="custom-control-label" for="VUZ"></label>
           </div>
         </div>
-        <div class="row align-center">
+        <div class="row m-3">
           <div class="col-md-6">
             <p class="text-md-right">Быстрая доставка</p>
           </div>
@@ -114,7 +125,36 @@
             <label class="custom-control-label" for="DELIVERY"></label>
           </div>
         </div>
+        <div class="container border">
+          <div class="row">
+            <div class="col-md-6 p-3">
+              <p class="float-left">Итого:</p>
+            </div>
+            <div class="col-md-6 p-3">
+              <button class="btn btn-primary float-right" type="submit">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <hr width="80%" class="p-3">
+
+      <footer class="footer">
+        <div class="container">
+          <h5 class="align-center">ООО "Служба доставки еды"</h1>
+            <div class="row ">
+              <div class="col-md-4 p-2">
+                <p class="text-md-center"><img src="images/email.png" width="10%" alt=""> email@email.com</p>
+              </div>
+              <div class="col-md-4 p-2">
+                <p class="text-md-center"><img src="images/link.png" width="10%" alt=""> food.com</p>
+              </div>
+              <div class="col-md-4 p-2">
+                <p class="text-md-center"><a href="#"><img src="images/facebook.png" width="10%"></a><a href="#"><img src="images/twitter.png" width="10%"></a></p>
+              </div>
+            </div>
+        </div>
+      </footer>
       
 </body>
 </html>
