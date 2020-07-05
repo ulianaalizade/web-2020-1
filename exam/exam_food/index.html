@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <title>Доставка</title>
     <link rel="shortcut icon" href="images/tab-icon.png" type="image/png">
 </head>
@@ -23,10 +24,10 @@
               <a class="nav-link " href="#deli">Служба доставки еды<span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Выбор предприятия<span class="sr-only"></span></a>
+              <a class="nav-link" href="#choose">Выбор предприятия<span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Меню<span class="sr-only"></span></a>
+              <a class="nav-link" href="#menu">Меню<span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#options">Дополнительные опции<span class="sr-only"></span></a>
@@ -99,9 +100,54 @@
 
       <h2 class="align-center p-4" id="choose">Выбор предприятия общественного питания</h2>
 
+      <!-- выбор предприятия -->
+      <div class="container border">
+        <div class="row">
+          <div class="form-group col-md-6 p-3 text-md-left">
+            <label for="adm_area">Административный округ</label>
+            <select id="adm_area" class="form-control">
+              <option selected></option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 p-3 text-md-left">
+            <label for="district">Район</label>
+            <select id="district" class="form-control">
+              <option selected></option>
+            </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-4 text-md-left p-3">
+              <label for="type_inc">Тип</label>
+              <select id="tipe_inc" class="form-control">
+                <option selected> </option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 text-md-left p-3">
+              <label for="soc_discount">Соц. скидки</label>
+              <select id="soc_discount" class="form-control">
+                <option selected> </option>
+                <option>Есть</option>
+                <option>Нет</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 text-md-left p-3 align-self-center mx-auto text-md-center">
+              <button class="btn btn-primary btn-lg" type="button" id="FilterFindButton" href="#results">Найти!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <p class="p-1"></p>
+      
+      <!-- результат поиска -->
+        
+        
+
+
       <hr width="70%">
 
-      <h2 class="align-center p-4" id="choose">Меню</h2>
+      <h2 class="align-center p-4" id="menu">Меню</h2>
 
       <hr width="70%" class="p-3">
 
@@ -142,7 +188,7 @@
       <footer class="footer">
         <div class="container">
           <h5 class="align-center">ООО "Служба доставки еды"</h1>
-            <div class="row ">
+            <div class="row">
               <div class="col-md-4 p-2">
                 <p class="text-md-center"><img src="images/email.png" width="10%" alt=""> email@email.com</p>
               </div>
