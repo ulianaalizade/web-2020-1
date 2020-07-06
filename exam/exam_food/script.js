@@ -26,28 +26,29 @@ let select_res = {
 				typearr.innerHTML = `${String(element)}`;
 				document.getElementById('ind_type').append(typearr);
 			});
-			// let test = admArea;
-			// divrItem = document.createElement('div'); //<div class="col-md-2"><p class="card-text" id="card">${String(test.name)}(${String(test.typeObject)})</p></div>
-			// divrItem.className = "col-md-2";
-			// divrItem.innerHTML =
-			// 	`<div>
-			// 		<div class="row m-3">
-			// 			<div class="form-group col-md-2 p-3 text-md-left">
-			// 				<label for="ind_adm">Название</label>
-			// 				<p class="card-text" id="card">${String(test.name)}(${String(test.typeObject)})</p>
-			// 				<label for="ind_adm">Адрес</label>
-			// 				<p class="card-text" id="card">${String(test.name)}(${String(test.typeObject)})</p>
-			// 				<button class="btn btn-primary btn-lg" type="button" id="order_shop"">Выбрать</button>
-			// 			</div>
-			// 		</div>
-			// 	</div>`
-			//   document.getElementById('rest_list').append(divrItem);
+			let admArea2 = JSON.parse(xhr.responseText).map(Area => {return Area.admArea2;});
+			div = document.createElement('div');
+			div.innerHTML =
+				`<div>
+					<div class="row m-3">
+						<div class="form-group col-md-2 p-3 text-md-left">
+							<label for="ind_adm">Название</label>
+							<p class="card-text" id="card">${String(admArea2.name)}</p>
+							<label for="ind_adm">Адрес</label>
+							<p class="card-text" id="card">${String(admArea2.address)}</p>
+							<button class="btn btn-primary btn-lg" type="button" id="order_shop"">Выбрать</button>
+						</div>
+					</div>
+				</div>`
+			  document.getElementById('rest_list').append(div);
 		}
 		xhr.send();	
 	}
 }
 
 select_res.init();
+
+
 
 function twin(array){
 	let result = [];
@@ -60,7 +61,3 @@ function twin(array){
 	}
 	return result;
 }
-
-
-
-
