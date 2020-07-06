@@ -60,7 +60,7 @@ function twin(array){
 	return result;
 }
 
-function renderRecords(records) {  // прямиком с вебинара от 09.06.2020 :)
+function renderRecords(records) {
     let t = document.getElementById('records').querySelector('tbody');
     let row;
     let td;
@@ -91,8 +91,11 @@ function sendRec(method, url, onloadHandler) {
 // и загружает из JSON, и отображает на странице :)
 
 window.onload = function () { 
-    let url = new URL(host);
-    sendRec('GET',url, function () {
-        renderRecords(this.response);
-    })
+	document.getElementById('find_button').onclick = function(){
+		let url = new URL(host);
+		sendRec('GET',url, function () {
+			renderRecords(this.response);
+		})
+	}
+
 }
