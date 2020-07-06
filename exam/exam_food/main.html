@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">-->
     <script src="script.js" defer></script>
     <title>Доставка</title>
     <link rel="shortcut icon" href="images/tab-icon.png" type="image/png">
@@ -104,166 +105,62 @@
       <div class="container border">
         <div class="row">
           <div class="form-group col-md-6 p-3 text-md-left">
-            <label for="admArea">Административный округ</label>
-            <select id="admArea" class="form-control">
+            <label for="ind_adm">Административный округ</label>
+            <select id="ind_adm" class="form-control">
               <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
-              <option>Центральный административный округ</option>
-              <option>Западный административный округ</option>
-              <option>Северный административный округ</option>
-              <option>Южный административный округ</option>
-              <option>Восточный административный округ</option>
-              <option>Северо-Восточный административный окру</option>
-              <option>Северо-Западный административный округ</option>
-              <option>Юго-Восточный административный округ</option>
-              <option>Юго-Западный административный округ</option>
-              <option>Новомосковский административный округ</option>
-              <option>Троицкий административный округ</option>
             </select>
           </div>
           <div class="form-group col-md-6 p-3 text-md-left">
-            <label for="district">Район</label>
-            <select id="district" class="form-control">
+            <label for="ind_district">Район</label>
+            <select id="ind_district" class="form-control">
               <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
-              <optgroup label="ЦАО"></optgroup>
-              <option>район Арбат</option>
-              <option>Басманный район</option>
-              <option>район Замоскворечье</option>
-              <option>Красносельский район</option>
-              <option>Мещанский район</option>
-              <option>Пресненский район</option>
-              <option>Таганский район</option>
-              <option>Тверской район</option>
-              <option>район Хамовники</option>
-              <option>район Якиманка</option>
-              <optgroup label="САО"></optgroup>
-              <option>район Аэропорт</option>
-              <option>район Беговой</option>
-              <option>Бескудниковский район</option>
-              <option>Войковский район</option>
-              <option>Головинский район</option>
-              <option>район Восточное Дегунино</option>
-              <option>район Западное Дегунино</option>
-              <option>Дмитровский район</option>
-              <option>район Коптево</option>
-              <option>Савёловский район</option>
-              <option>район Сокол</option>
-              <option>Тимирязевский район</option>
-              <optgroup label="СВАО"></optgroup>
-              <option>Алексеевский район</option>
-              <option>Алтуфьевский район</option>
-              <option>Бабушкинский район</option>
-              <option>район Бибирево</option>
-              <option>Бутырский район</option>
-              <option>район Лианозово</option>
-              <option>Лосиноостровский район</option>
-              <option>район Марфино</option>
-              <option>район Марьина Роща</option>
-              <option>район Северное Медведково</option>
-              <option>район Южное Медведково</option>
-              <option>Останкинский район</option>
-              <option>район Отрадное</option>
-              <option>район Ростокино</option>
-              <option>район Свиблово</option>
-              <option>Ярославский район</option>
-              <optgroup label="ВАО"></optgroup>
-              <option>район Богородское</option>
-              <option>район Вешняки</option>
-              <option>район Восточное Измайлово</option>
-              <option>район Измайлово</option>
-              <option>район Косино-Ухтомский</option>
-              <option>район Новогиреево</option>
-              <option>район Новокосино</option>
-              <option>район Перово</option>
-              <option>район Преображенское</option>
-              <option>район Соколиная Гора</option>
-              <option>район Сокольники</option>
-              <optgroup label="ЮВАО"></optgroup>
-              <option>район Выхино-Жулебино</option>
-              <option>район Кузьминки</option>
-              <option>район Лефортово</option>
-              <option>район Люблино</option>
-              <option>район Марьино</option>
-              <option>Рязанский район</option>
-              <option>Южнопортовый район</option>
-              <optgroup label="ЮАО"></optgroup>
-              <option>район Бирюлёво Восточное</option>
-              <option>район Бирюлёво Западное</option>
-              <option>Даниловский район</option>
-              <option>Донской район</option>
-              <option>район Зябликово</option>
-              <option>район Москворечье-Сабурово</option>
-              <option>район Нагатино-Садовники</option>
-              <option>район Нагатинский Затон</option>
-              <option>Нагорный район</option>
-              <option>район Царицыно</option>
-              <option>район Чертаново Южное</option>
-              <option>район Чертаново Центральное</option>
-              <optgroup label="ЮЗАО"></optgroup>
-              <option>Академический район</option>
-              <option>район Северное Бутово</option>
-              <option>Гагаринский район</option>
-              <option>район Зюзино</option>
-              <option>район Коньково</option>
-              <option>Ломоносовский район</option>
-              <option>Обручевский район</option>
-              <option>район Черёмушки</option>
-              <optgroup label="ЗАО"></optgroup>
-              <option>район Дорогомилово</option>
-              <option>Можайский район</option>
-              <option>район Проспект Вернадского</option>
-              <option>район Тропарёво-Никулино</option>
-              <option>район Филёвский Парк</option>
-              <option>район Фили-Давыдково</option>
-              <optgroup label="СЗАО"></optgroup>
-              <option>район Покровское-Стрешнево</option>
-              <option>район Строгино</option>
-              <option>район Северное Тушино</option>
-              <option>район Южное Тушино</option>
-              <option>район Хорошёво-Мнёвник</option>
-              <option>район Щукино</option>
-              <optgroup label="НАО"></optgroup>
-              <option>поселение Щербинка</option>
-              <optgroup label="ТАО"></optgroup>
-              <option>поселение Щаповское</option>
             </select>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-4 text-md-left p-3">
-              <label for="name">Тип</label>
-              <select id="name" class="form-control">
+              <label for="ind_type">Тип</label>
+              <select id="ind_type" class="form-control">
                 <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
-                <option>кафе</option>
-                <option>буфет</option>
-                <option>ресторан</option>
-                <option>столовая</option>
-                <option>предприятие быстрого обслуживания</option>
-                <option>закусочная</option>
               </select>
             </div>
             <div class="form-group col-md-4 text-md-left p-3">
-              <label for="socialDiscount">Соц. скидки</label>
-              <select id="socialDiscount" class="form-control">
+              <label for="ind_socialDiscount">Соц. скидки</label>
+              <select id="ind_socialDiscount" class="form-control">
                 <option selected disabled hidden value='Не выбрано' id="socialDiscount">Не выбрано</option>
+                <option>Есть</option>
+                <option>Нет</option>
               </select>
             </div>
             <div class="form-group col-md-4 text-md-left p-3 align-self-center mx-auto text-md-center">
-              <button class="btn btn-primary btn-lg" type="button" id="find_btn" href="#results">Найти!</button>
+              <button class="btn btn-primary btn-lg" type="button" id="find_btn" href="#rest_results">Найти!</button>
             </div>
           </div>
         </div>
       </div>
-
-      <!--<div class="container">
-        <button id="downloadDataBtn" class="btn btn-primary">Download</div>
-          <table id="records" class="table">
-            <tbody></tbody>
-          </table>
-      </div>-->
       
       <p class="p-1"></p>
       
-      <!-- результат поиска -->      
+      <!-- результат поиска -->
+      	  		
+	  		<div class="row featurette" id="rest_results">
+		  		<hr class="featurette-divider">
+	  			<div class="album py-5 " style="background-color: #ebf5f4;">
+				    <div class="container">
+				
+				      <div class="row" id="print_rest" style="background-color: #d6ecea; border-radius: 5px;" >
+					     
+				      </div>
+				      <div class="row">
+					     <div class="col-lg-12"  style="text-align: center;">
+						    <ul class="pagination justify-content-center" id="input_pagination"> </ul>
+				      	</div>
+				      </div>
+				    </div>
+  				</div>
+
+
+    		</div>      
 
       <hr width="70%">
 
@@ -323,6 +220,10 @@
             </div>
         </div>
       </footer>
-      
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
